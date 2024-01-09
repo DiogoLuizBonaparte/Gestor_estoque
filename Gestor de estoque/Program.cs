@@ -1,7 +1,9 @@
-﻿using System.Net.Http.Headers;
+﻿using Gestor_de_estoque;
+using System.Net.Http.Headers;
 
 class Program
 {
+    static List<IEstoque> produtos = new List<IEstoque>();
     enum Menu { Listar = 1, Adicionar, Remover, Entrada, Saida, Sair}
 
 
@@ -56,8 +58,10 @@ class Program
         switch(opcao) 
         {
             case 1:
+                CadastrarPFisico();
                 break;
             case 2:
+                CadastrarEbook();
                 break;
             case 3:
                 break;
@@ -66,7 +70,42 @@ class Program
 
     static void CadastrarPFisico()
     {
-         
+        Console.WriteLine("Cadastro de produto físico");
+        Console.WriteLine("Nome: ");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Preço: ");
+        float preco = float.Parse(Console.ReadLine());
+        Console.WriteLine("Frete: ");
+        float frete = float.Parse(Console.ReadLine());
+        ProdutoFisico pf = new ProdutoFisico(nome, preco, frete);
+        produtos.Add(pf);
+
+    }
+
+    static void CadastrarEbook()
+    {
+        Console.WriteLine("Cadastro de ebook");
+        Console.WriteLine("Nome: ");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Preço: ");
+        float preco = float.Parse(Console.ReadLine());
+        Console.WriteLine("Autor: ");
+        string autor = Console.ReadLine();
+        Ebook eb = new Ebook(nome, preco, autor);
+        produtos.Add(eb);
+
+    }
+    static void CadastrarCurso()
+    {
+        Console.WriteLine("Cadastro de ebook");
+        Console.WriteLine("Nome: ");
+        string nome = Console.ReadLine();
+        Console.WriteLine("Preço: ");
+        float preco = float.Parse(Console.ReadLine());
+        Console.WriteLine("Autor: ");
+        string autor = Console.ReadLine();
+        Curso cs = new Curso(nome, preco, autor);
+        produtos.Add(cs);
 
     }
 }
