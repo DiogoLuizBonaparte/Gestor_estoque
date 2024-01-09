@@ -1,0 +1,15 @@
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.AssemblyInfoInputs.cache
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.AssemblyInfo.cs
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.csproj.CoreCompileInputs.cache
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.sourcelink.json
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\bin\Debug\net8.0\Gestor de estoque.exe
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\bin\Debug\net8.0\Gestor de estoque.deps.json
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\bin\Debug\net8.0\Gestor de estoque.runtimeconfig.json
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\bin\Debug\net8.0\Gestor de estoque.dll
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\bin\Debug\net8.0\Gestor de estoque.pdb
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.dll
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\refint\Gestor de estoque.dll
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.pdb
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\Gestor de estoque.genruntimeconfig.cache
+C:\Users\Bonaparte\source\repos\Gestor de estoque\Gestor de estoque\obj\Debug\net8.0\ref\Gestor de estoque.dll
