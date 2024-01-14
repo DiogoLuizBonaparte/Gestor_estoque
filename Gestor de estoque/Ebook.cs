@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Gestor_de_estoque
 {
-     class Ebook : Produto, IEstoque
+    [System.Serializable]
+    class Ebook : Produto, IEstoque
     {
         public string autor;
         private int vendas;

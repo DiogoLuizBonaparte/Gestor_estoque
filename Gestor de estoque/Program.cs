@@ -1,31 +1,37 @@
 ﻿using Gestor_de_estoque;
 using System.Net.Http.Headers;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text.Json;
+
 
 class Program
 {
+    
     static List<IEstoque> produtos = new List<IEstoque>();
     enum Menu { Listar = 1, Adicionar, Remover, Entrada, Saida, Sair}
 
 
     public static void Main(string[] args)
     {
+        
         bool escolheuSair = false;
         while (escolheuSair == false)
         {
             Console.WriteLine("Controle de estoque");
-            Console.WriteLine("1 - Listar\n2 - Adicionar\n3 - Remover\n4 - Adicionar\n5 - Registrar entrada\n6 - Regisrar saida\n7 - Sair ");
+            Console.WriteLine("1 - Listar\n2 - Adicionar\n3 - Remover\n4 - Registrar entrada\n5 - Regisrar saida\n6 - Sair ");
             int opInt = int.Parse(Console.ReadLine());
 
-            if (opInt < 1 && opInt > 7)
+            if (opInt > 0 && opInt < 7)
             {
 
                 Menu escolha = (Menu)opInt;
 
                 switch (escolha)
                 {
-                    case Menu.Listar:
+                    case Menu.Listar:                       
                         break;
                     case Menu.Adicionar:
+                        Cadastro();
                         break;
                     case Menu.Remover:
                         break;
@@ -34,16 +40,18 @@ class Program
                     case Menu.Saida:
                         break;
                     case Menu.Sair:
-                        escolheuSair |= true;
+                        escolheuSair = true;
                         break;
 
                 }
             }
             else
             {
+                Console.WriteLine("Escolheu Sair");
+                Console.ReadLine();
                 escolheuSair = true;
             }
-
+            Console.Clear();
         }
 
     }
@@ -64,6 +72,7 @@ class Program
                 CadastrarEbook();
                 break;
             case 3:
+                CadastrarCurso();
                 break;
         }
     }
@@ -79,6 +88,8 @@ class Program
         float frete = float.Parse(Console.ReadLine());
         ProdutoFisico pf = new ProdutoFisico(nome, preco, frete);
         produtos.Add(pf);
+        Console.WriteLine("Produto cadastrado com sucesso ");
+        Console.ReadLine();
 
     }
 
@@ -106,6 +117,20 @@ class Program
         string autor = Console.ReadLine();
         Curso cs = new Curso(nome, preco, autor);
         produtos.Add(cs);
+        Salvar(cs);
+
 
     }
+
+    static void Salvar()
+    {
+        StreamWriter escritor = new StreamWriter("Salvar.txt");
+        escritor.WriteLine(cadastro);
+   
+
+       
+
+     
+
+    } 
 }
